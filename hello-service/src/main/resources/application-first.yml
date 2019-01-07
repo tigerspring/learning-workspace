@@ -3,6 +3,10 @@ server:
 spring:
   application:
     name: hello-service
+    #服务续约任务的调用时间间隔为30秒
+    lease-renewal-interval-in-seconds: 30
+    #服务失效时间为90秒
+    lease-expiration-duration-in-seconds: 90
 eureka:
   client:
     service-url:
